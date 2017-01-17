@@ -40,7 +40,7 @@ class MobLife:
 
 class Mob(rectangle.Rectangle):
     #-Codigo usado no reconhecimento do mob ao ler no arquivo de level
-    ident = "trabalho"
+    ident = "traba"
     #-Inicializa o Mob padrao
     def __init__(self, position, health=100, name="Trabalho", speed=75, image="files/mob.png", value=15):
         rectangle.Rectangle.__init__(self, 34, position, 16, 16, image)
@@ -141,16 +141,16 @@ class Mob(rectangle.Rectangle):
 
 #-Variacoes de Mobs
 class EasyMob(Mob):
-    ident = "trabalho"
+    ident = "traba"
     def __init__(self, position):
-        Mob.__init__(self, position, 100, "Trabalho", 75, "files/mob.png", 25)
+        Mob.__init__(self, position, 150, "Trabalho", 75, "files/mob.png", 25)
 
 class MediunMob(Mob):
     ident = "prova"
     def __init__(self, position):
-        Mob.__init__(self, position, 500, "Prova", 60, "files/mob2.png", 150)
+        Mob.__init__(self, position, 500, "Prova", 50, "files/mob2.png", 100)
 
 class HardMob(Mob):
     ident = "final"
     def __init__(self, position):
-        Mob.__init__(self, position, 2000, "Final", 50, "files/mob3.png", 500)
+        Mob.__init__(self, position, 2000, "Final", 40, "files/mob3.png", 250)

@@ -204,18 +204,18 @@ class Tower(rectangle.Rectangle):
 #-Variacoes de torre
 class FastTower(Tower):
     def __init__(self, position):
-        Tower.__init__(self, position, 16, 16, "files/torre2.png", "Livro", [50, 60, 70, 80], [50, 100, 200, 400], [6, 6, 7, 8])
+        Tower.__init__(self, position, 16, 16, "files/torre2.png", "Livro", [50, 50, 60, 70], [50, 100, 200, 500], [7, 8, 8, 10])
         self.bullet_type = bullet.Bullet
-        self.bullet_damage = [16, 32, 64, 128]
+        self.bullet_damage = [16, 32, 64, 108]
 
 class LightTower(Tower):
     def __init__(self, position):
-        Tower.__init__(self, position, 32, 32, "files/torre.png", "Novato", [70, 80, 90, 100], [75, 150, 250, 400], [2, 2.5, 3, 3])
+        Tower.__init__(self, position, 32, 32, "files/torre.png", "Novato", [70, 80, 90, 100], [100, 150, 250, 400], [3, 3, 4, 5])
         self.bullet_type = bullet.Bullet
         self.bullet_damage = [25, 50, 75, 100]
 
 class HeavyTower(Tower):
     def __init__(self, position):
-        Tower.__init__(self, position, 32, 32, "files/torre3.png", "Veterano", [100, 125, 150, 200], [200, 400, 800, 1200], [1, 2, 2, 2])
+        Tower.__init__(self, position, 32, 32, "files/torre3.png", "Veterano", [100, 125, 150, 200], [250, 400, 800, 1200], [1, 1, 2, 2])
         self.bullet_type = bullet.Bullet
         self.bullet_damage = [150, 250, 350, 750]
